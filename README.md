@@ -6,7 +6,7 @@ randomForest implements Breiman's random forest algorithm (based on Breiman and 
 
 Original URL: <https://github.com/cran/randomForest/tree/master>
 
-website URL:
+website URL: <https://jhu-statprogramming-fall-2023.github.io/biostat777-project3-part1-yijia0802/>
 
 ### Original Author
 
@@ -68,7 +68,7 @@ Christiana Liu
 
     Example:
 
-    ```{r example}
+    ```         
     set.seed(71)
     iris.rf <- randomForest(Species ~ ., data=iris, importance=TRUE,
                             proximity=TRUE)
@@ -89,7 +89,7 @@ Christiana Liu
 
     Example:
 
-```{r example}
+```         
 set.seed(71)
 iris.rf <- randomForest(Species ~ ., data=iris, importance=TRUE,
                         proximity=TRUE)
