@@ -1,0 +1,26 @@
+url: ~
+template:
+  bootstrap: 5
+  bootswatch: cerulean
+  bslib:
+    bg: "#ffffff"   
+    fg: "#333333"     
+    primary: "#007bff" 
+  theme: a11y-light
+navbar:
+  structure:
+    left:  [search]
+    right: [reference, articles]
+footer:
+  structure: 
+    left: pkgdown
+    right: [AndyLiaw, legal]
+  components:
+    legal: Provided without **any warranty**.
+home:
+  title: "Introduction to Random Forest"
+  description: "Random forest is a commonly-used machine learning algorithm trademarked by Leo Breiman and Adele Cutler, which combines the output of multiple decision trees to reach a single result. Its ease of use and flexibility have fueled its adoption, as it handles both classification and regression problems. This package implements the calculation of random forest."
+  strip_header: true
+  twitter:
+    card: summary
+
