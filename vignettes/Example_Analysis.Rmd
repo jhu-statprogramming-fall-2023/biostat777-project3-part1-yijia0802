@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 ### Read package
 
-```{r setup}
+```{r setup, message = FALSE}
 library(randomForest)
 library(tidyverse)
 library(ggplot2)
@@ -190,7 +190,7 @@ In summary, from the first plot, we can see that DPW maintained trees appeared t
 ## Functions
 
 |     | dplyr       | purrr     | ggplot2        | randomForest                    |
-|-----|-------------|-----------|----------------|---------------------------------|
+|------------|------------|------------|------------|------------------------|
 | 1   | select()    | map()     | geom_boxplot() | randomForest()                  |
 | 2   | mutate()    | map_chr() | facet_wrap()   | plot.randomForest(), aka plot() |
 | 3   | na.omit()   |           | geom_point()   |                                 |

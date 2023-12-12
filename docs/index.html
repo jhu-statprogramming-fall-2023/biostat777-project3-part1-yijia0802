@@ -64,7 +64,7 @@
 </h3>
 <p>randomForest implements Breiman’s random forest algorithm (based on Breiman and Cutler’s original Fortran code) for classification and regression. It can also be used in unsupervised mode for assessing proximities among data points.</p>
 <p>Original URL: <a href="https://github.com/cran/randomForest/tree/master" class="external-link uri">https://github.com/cran/randomForest/tree/master</a></p>
-<p>website URL:</p>
+<p>website URL: <a href="https://jhu-statprogramming-fall-2023.github.io/biostat777-project3-part1-yijia0802/" class="external-link uri">https://jhu-statprogramming-fall-2023.github.io/biostat777-project3-part1-yijia0802/</a></p>
 </div>
 <div class="section level3">
 <h3 id="original-author">Original Author<a class="anchor" aria-label="anchor" href="#original-author"></a>
@@ -74,6 +74,20 @@
 <h4 id="website-editor">Website Editor<a class="anchor" aria-label="anchor" href="#website-editor"></a>
 </h4>
 <p>Christiana Liu</p>
+</div>
+<div class="section level4">
+<h4 id="website-customization">Website Customization<a class="anchor" aria-label="anchor" href="#website-customization"></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li>using bootswatch: cerulean template</li>
+<li>changing color bg: “#ffffff” primary: “#007bff”</li>
+<li>changing color fg: “#333333”</li>
+<li>changing color primary: “#007bff”</li>
+<li>changing theme - theme: a11y-light</li>
+<li>adding navbar</li>
+<li>adding footer structure</li>
+<li>adding footer components</li>
+</ol>
 </div>
 </div>
 <div class="section level3">
@@ -128,7 +142,10 @@
 <p><strong>plot.randomForest</strong></p>
 <p>This plots the error rates or MSE of a randomForest object.</p>
 <p>Example:</p>
-<p><code>{r example} set.seed(71) iris.rf &lt;- randomForest(Species ~ ., data=iris, importance=TRUE,                         proximity=TRUE) plot(iris.rf)</code></p>
+<pre><code><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">71</span><span class="op">)</span></span>
+<span><span class="va">iris.rf</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/randomForest.html">randomForest</a></span><span class="op">(</span><span class="va">Species</span> <span class="op">~</span> <span class="va">.</span>, data<span class="op">=</span><span class="va">iris</span>, importance<span class="op">=</span><span class="cn">TRUE</span>,</span>
+<span>                        proximity<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">iris.rf</span><span class="op">)</span></span></code></pre>
 </li>
 <li>
 <p><strong>partialPlot</strong></p>
@@ -144,7 +161,10 @@
 <p>Example:</p>
 </li>
 </ol>
-<p><code>{r example} set.seed(71) iris.rf &lt;- randomForest(Species ~ ., data=iris, importance=TRUE,                         proximity=TRUE) print(iris.rf)</code></p>
+<pre><code><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">71</span><span class="op">)</span></span>
+<span><span class="va">iris.rf</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/randomForest.html">randomForest</a></span><span class="op">(</span><span class="va">Species</span> <span class="op">~</span> <span class="va">.</span>, data<span class="op">=</span><span class="va">iris</span>, importance<span class="op">=</span><span class="cn">TRUE</span>,</span>
+<span>                        proximity<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">iris.rf</span><span class="op">)</span></span></code></pre>
 <ol start="16" style="list-style-type: decimal">
 <li>
 <p><strong>predict.randomForest</strong></p>
@@ -210,12 +230,12 @@
 
     <footer><div class="pkgdown-footer-left">
   <p></p>
-<p>NULL</p>
+<p>Developed by Andy Liaw.</p>
 </div>
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>NULL Provided without <strong>any warranty</strong>.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7. Provided without <strong>any warranty</strong>.</p>
 </div>
 
     </footer>

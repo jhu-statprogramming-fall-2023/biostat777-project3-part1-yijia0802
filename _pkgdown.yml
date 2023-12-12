@@ -13,8 +13,8 @@ navbar:
     right: [reference, articles]
 footer:
   structure: 
-    left: pkgdown
-    right: [AndyLiaw, legal]
+    left: developed_by
+    right: [built_with, legal]
   components:
     legal: Provided without **any warranty**.
 home:
