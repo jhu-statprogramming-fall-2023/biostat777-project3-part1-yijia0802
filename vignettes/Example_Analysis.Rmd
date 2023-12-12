@@ -39,6 +39,10 @@ Data: <https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020
 ### Load Data
 
 ```{r load data}
+# tests if a directory named "data" exists locally
+if (!dir.exists(here("data"))) {
+    dir.create(here("data"))
+}
 #tuesdata <- tidytuesdayR::tt_load("2020-01-28")
 #sf_trees <- tuesdata$sf_trees
 if (!file.exists(here("data", "tuesdata_sf_trees.RDS"))) {
@@ -186,7 +190,7 @@ In summary, from the first plot, we can see that DPW maintained trees appeared t
 ## Functions
 
 |     | dplyr       | purrr     | ggplot2        | randomForest                    |
-|----------|-------------|------------|---------------|---------------|
+|-----|-------------|-----------|----------------|---------------------------------|
 | 1   | select()    | map()     | geom_boxplot() | randomForest()                  |
 | 2   | mutate()    | map_chr() | facet_wrap()   | plot.randomForest(), aka plot() |
 | 3   | na.omit()   |           | geom_point()   |                                 |
