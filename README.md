@@ -23,7 +23,7 @@ Christiana Liu
 3.  changing color fg: "#333333"
 4.  changing color primary: "#007bff"
 5.  changing theme - theme: a11y-light
-6.  adding navbar
+6.  customizing navbar
 7.  adding footer structure
 8.  adding footer components
 
@@ -100,12 +100,12 @@ Christiana Liu
 
     Example:
 
-```         
-set.seed(71)
-iris.rf <- randomForest(Species ~ ., data=iris, importance=TRUE,
+    ```         
+    set.seed(71)
+    iris.rf <- randomForest(Species ~ ., data=iris, importance=TRUE,
                         proximity=TRUE)
-print(iris.rf)
-```
+    print(iris.rf)
+    ```
 
 16. **predict.randomForest**
 

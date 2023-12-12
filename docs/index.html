@@ -84,7 +84,7 @@
 <li>changing color fg: “#333333”</li>
 <li>changing color primary: “#007bff”</li>
 <li>changing theme - theme: a11y-light</li>
-<li>adding navbar</li>
+<li>customizing navbar</li>
 <li>adding footer structure</li>
 <li>adding footer components</li>
 </ol>
@@ -159,13 +159,11 @@
 <p><strong>randomForest</strong></p>
 <p>This implements Breiman’s random forest algorithm (based on Breiman and Cutler’s original Fortran code) for classification and regression. It can also be used in unsupervised mode for assessing proximities among data points.</p>
 <p>Example:</p>
-</li>
-</ol>
 <pre><code><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">71</span><span class="op">)</span></span>
 <span><span class="va">iris.rf</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/randomForest.html">randomForest</a></span><span class="op">(</span><span class="va">Species</span> <span class="op">~</span> <span class="va">.</span>, data<span class="op">=</span><span class="va">iris</span>, importance<span class="op">=</span><span class="cn">TRUE</span>,</span>
-<span>                        proximity<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
+<span>                    proximity<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">iris.rf</span><span class="op">)</span></span></code></pre>
-<ol start="16" style="list-style-type: decimal">
+</li>
 <li>
 <p><strong>predict.randomForest</strong></p>
 <p>This is the prediction of test data using random forest.</p>

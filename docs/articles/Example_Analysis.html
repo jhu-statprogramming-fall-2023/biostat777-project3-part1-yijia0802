@@ -145,6 +145,7 @@ Francisco Department of Legal Work.</p>
 <span>  <span class="fu"><a href="https://rdrr.io/r/stats/na.fail.html" class="external-link">na.omit</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate_all.html" class="external-link">mutate_if</a></span><span class="op">(</span><span class="va">is.character</span>, <span class="va">factor</span><span class="op">)</span></span>
 <span></span>
+<span><span class="co">#summary stats</span></span>
 <span><span class="va">trees_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
 <span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select_all.html" class="external-link">select_if</a></span><span class="op">(</span><span class="va">is.numeric</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
 <span>  <span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map</a></span><span class="op">(</span><span class="op">~</span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span><span class="op">)</span></span>
@@ -171,7 +172,6 @@ Francisco Department of Legal Work.</p>
 <span><span class="co">#&gt; $longitude</span></span>
 <span><span class="co">#&gt;    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. </span></span>
 <span><span class="co">#&gt;  -122.5  -122.5  -122.4  -122.4  -122.4  -122.4</span></span>
-<span></span>
 <span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span>.x <span class="op">=</span> <span class="va">trees_df</span>, .f <span class="op">=</span> <span class="va">typeof</span><span class="op">)</span></span>
 <span><span class="co">#&gt;      tree_id legal_status   site_order    site_info    caretaker         date </span></span>
 <span><span class="co">#&gt;     "double"    "integer"     "double"    "integer"    "integer"     "double" </span></span>
@@ -305,11 +305,11 @@ package.</p>
 </h2>
 <table class="table">
 <colgroup>
-<col width="16%">
-<col width="16%">
-<col width="16%">
-<col width="16%">
-<col width="33%">
+<col width="18%">
+<col width="18%">
+<col width="18%">
+<col width="18%">
+<col width="25%">
 </colgroup>
 <thead><tr class="header">
 <th></th>

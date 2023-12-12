@@ -70,10 +70,10 @@ trees_df <- sf_trees %>%
   na.omit() %>%
   mutate_if(is.character, factor)
 
+#summary stats
 trees_df %>%
 select_if(is.numeric) %>% 
   map(~summary(.))
-
 map_chr(.x = trees_df, .f = typeof)
 
 ```
@@ -190,7 +190,7 @@ In summary, from the first plot, we can see that DPW maintained trees appeared t
 ## Functions
 
 |     | dplyr       | purrr     | ggplot2        | randomForest                    |
-|------------|------------|------------|------------|------------------------|
+|--------------|--------------|--------------|--------------|-------------------|
 | 1   | select()    | map()     | geom_boxplot() | randomForest()                  |
 | 2   | mutate()    | map_chr() | facet_wrap()   | plot.randomForest(), aka plot() |
 | 3   | na.omit()   |           | geom_point()   |                                 |
