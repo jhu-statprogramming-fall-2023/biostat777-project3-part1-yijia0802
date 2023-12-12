@@ -16,6 +16,17 @@ Fortran original by Leo Breiman and Adele Cutler, R port by Andy Liaw and Matthe
 
 Christiana Liu
 
+#### Website Customization
+
+1.  using bootswatch: cerulean template
+2.  changing color bg: "#ffffff" primary: "#007bff"
+3.  changing color fg: "#333333"
+4.  changing color primary: "#007bff"
+5.  changing theme - theme: a11y-light
+6.  adding navbar
+7.  adding footer structure
+8.  adding footer components
+
 ### Functions
 
 1.  **important**
